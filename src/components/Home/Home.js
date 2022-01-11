@@ -29,30 +29,6 @@ const Home = () => {
             <img src={banner2} class="block w-full carousel-img" alt="Camera" />
           </div>
         </div>
-        <button
-          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon inline-block bg-no-repeat"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon inline-block bg-no-repeat"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
       {/* end of top banner */}
       {/* start of about section */}
@@ -80,7 +56,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      {/* end of sbout */}
+      {/* end of about */}
       {/* doctor section */}
       <div>
         <div className="text-center mb-24">
@@ -95,7 +71,9 @@ const Home = () => {
         </div>
         <div className="grid grid-cols-4 gap-8 lg:ml-14 lg:mr-14 mb-24">
           <div className="border-2">
-            <img src={doctor1} alt="" />
+            <div className="img-container">
+              <img src={doctor1} alt="" />
+            </div>
             <div className="pl-3 pb-3">
               <h1 className="font-bold text-sky-800 text-lg pt-2">
                 Dr.Veranda Tanumihardja
@@ -108,7 +86,9 @@ const Home = () => {
             </div>
           </div>
           <div className="border-2">
-            <img src={doctor4} alt="" />
+            <div className="img-container">
+              <img src={doctor4} alt="" />
+            </div>
             <div className="pl-3 pb-3">
               <h1 className="font-bold text-sky-800 text-lg pt-2">
                 Dr. Kathryn Wood
@@ -121,7 +101,9 @@ const Home = () => {
             </div>
           </div>
           <div className="border-2">
-            <img src={doctor3} alt="" />
+            <div className="img-container">
+              <img src={doctor3} alt="" />
+            </div>
             <div className="pl-3 pb-3">
               <h1 className="font-bold text-sky-800 text-lg pt-2">
                 Dr. Hooman Azmi
@@ -134,7 +116,9 @@ const Home = () => {
             </div>
           </div>
           <div className="border-2">
-            <img src={doctor2} alt="" />
+            <div className="img-container">
+              <img src={doctor2} alt="" />
+            </div>
             <div className="pl-3 pb-3">
               <h1 className="font-bold text-sky-800 text-lg pt-2">
                 Dr. Peter Parker
