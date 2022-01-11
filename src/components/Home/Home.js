@@ -3,6 +3,10 @@ import "tw-elements";
 import "./Home.css";
 import banner1 from "./image/banner-1.jpg";
 import banner2 from "./image/banner-2.jpg";
+import doctor1 from "./image/doctor-1.jpg";
+import doctor2 from "./image/doctor-2.jpg";
+import doctor3 from "./image/doctor-3.jpg";
+import doctor4 from "./image/doctor-4.jpg";
 
 const Home = () => {
   return (
@@ -51,7 +55,7 @@ const Home = () => {
         </button>
       </div>
       {/* end of top banner */}
-      {/* start of overview section */}
+      {/* start of about section */}
       <div className="flex flex-row justify-center mt-24 mb-24">
         <div className="ml-32 basis-1/2">
           <img
@@ -74,6 +78,74 @@ const Home = () => {
             holistic management of each individual, encompassing mental,
             physical and emotional health.
           </p>
+        </div>
+      </div>
+      {/* end of sbout */}
+      {/* doctor section */}
+      <div>
+        <div className="text-center mb-24">
+          <h1 className="font-bold text-2xl mb-3">OUR DOCTORS</h1>
+          <p>
+            Our doctors are specialized in their{" "}
+            <span className="border-b-2 border-blue-700 pb-8">
+              field and have
+            </span>
+            more than 10 years of experiences.
+          </p>
+        </div>
+        <div className="grid grid-cols-4 gap-8 lg:ml-14 lg:mr-14 mb-24">
+          <div className="border-2">
+            <img src={doctor1} alt="" />
+            <div className="pl-3 pb-3">
+              <h1 className="font-bold text-sky-800 text-lg pt-2">
+                Dr.Veranda Tanumihardja
+              </h1>
+              <p className="italic text-slate-500 pb-3">Pulmonary</p>
+              <p>
+                Veranda was born and raised in Jakarta, Indonesia. He graduated
+                from the University of...
+              </p>
+            </div>
+          </div>
+          <div className="border-2">
+            <img src={doctor4} alt="" />
+            <div className="pl-3 pb-3">
+              <h1 className="font-bold text-sky-800 text-lg pt-2">
+                Dr. Kathryn Wood
+              </h1>
+              <p className="italic text-slate-500 pb-3">Pulmonary</p>
+              <p>
+                Kathryn was born and raised in Indonesia, North Way Indonesia He
+                graduated from the University...
+              </p>
+            </div>
+          </div>
+          <div className="border-2">
+            <img src={doctor3} alt="" />
+            <div className="pl-3 pb-3">
+              <h1 className="font-bold text-sky-800 text-lg pt-2">
+                Dr. Hooman Azmi
+              </h1>
+              <p className="italic text-slate-500 pb-3">Dental</p>
+              <p>
+                Hooman was born and raised in Indonesia, North Way Indonesia He
+                graduated from the University...
+              </p>
+            </div>
+          </div>
+          <div className="border-2">
+            <img src={doctor2} alt="" />
+            <div className="pl-3 pb-3">
+              <h1 className="font-bold text-sky-800 text-lg pt-2">
+                Dr. Peter Parker
+              </h1>
+              <p className="italic text-slate-500 pb-3">Neurologist</p>
+              <p>
+                Parker was born and raised in UK, North Way Australia He
+                graduated from the University of...
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
