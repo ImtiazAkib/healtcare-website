@@ -1,5 +1,8 @@
 import React from "react";
 import "tw-elements";
+import "./Home.css";
+import banner1 from "./image/banner-1.jpg";
+import banner2 from "./image/banner-2.jpg";
 
 const Home = () => {
   return (
@@ -10,27 +13,16 @@ const Home = () => {
         class="carousel slide relative"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner relative w-full overflow-hidden">
+        <div class="carousel-inner relative w-full  overflow-hidden">
           <div class="carousel-item active relative float-left w-full">
             <img
-              src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-              class="block w-full"
+              src={banner1}
+              class="block w-full carousel-img"
               alt="Wild Landscape"
             />
           </div>
           <div class="carousel-item relative float-left w-full">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-              class="block w-full"
-              alt="Camera"
-            />
-          </div>
-          <div class="carousel-item relative float-left w-full">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-              class="block w-full"
-              alt="Exotic Fruits"
-            />
+            <img src={banner2} class="block w-full carousel-img" alt="Camera" />
           </div>
         </div>
         <button
@@ -57,6 +49,32 @@ const Home = () => {
           ></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div>
+      {/* end of top banner */}
+      {/* start of overview section */}
+      <div className="flex flex-row justify-center mt-24 mb-24">
+        <div className="ml-32 basis-1/2">
+          <img
+            src="https://www.grs.net.au/wp-content/uploads/2021/01/family-walk-forest-768x512.jpg"
+            className="w-11/12"
+            alt=""
+          />
+        </div>
+        <div className="basis-1/2">
+          <h1 className="font-bold text-3xl mb-3">About Us</h1>
+          <p className="text-lg mr-14 ">
+            Our Hospital has been servicing the local community since 1985.
+            Watsonia Road Medical Centre, a new purpose-built clinic opened in
+            2019 to cater for the growing needs of our patients. The doctors
+            from both clinics have always endeavoured to provide the highest
+            quality of service with professionalism and compassion. With the
+            wide range of special areas of interest, expertise and skills among
+            the medical staff at the two clinics, you will find all your
+            healthcare needs will be well managed. All the staff believe in
+            holistic management of each individual, encompassing mental,
+            physical and emotional health.
+          </p>
+        </div>
       </div>
     </div>
   );
