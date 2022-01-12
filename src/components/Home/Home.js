@@ -1,5 +1,6 @@
 import React from "react";
 import "tw-elements";
+import Services from "../Services/Services";
 import "./Home.css";
 import banner1 from "./image/banner-1.jpg";
 import banner2 from "./image/banner-2.jpg";
@@ -18,15 +19,11 @@ const Home = () => {
         data-bs-ride="carousel"
       >
         <div class="carousel-inner relative w-full  overflow-hidden">
-          <div class="carousel-item active relative float-left w-full">
-            <img
-              src={banner1}
-              class="block w-full carousel-img"
-              alt="Wild Landscape"
-            />
+          <div class="carousel-item active relative float-left w-full carousel-img">
+            <img src={banner1} class="block w-full " alt="" />
           </div>
-          <div class="carousel-item relative float-left w-full">
-            <img src={banner2} class="block w-full carousel-img" alt="Camera" />
+          <div class="carousel-item relative float-left w-full carousel-img">
+            <img src={banner2} class="block w-full " alt="" />
           </div>
         </div>
       </div>
@@ -65,7 +62,7 @@ const Home = () => {
             Our doctors are specialized in their{" "}
             <span className="border-b-2 border-blue-700 pb-8">
               field and have
-            </span>
+            </span>{" "}
             more than 10 years of experiences.
           </p>
         </div>
@@ -132,6 +129,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* end of doctor section */}
+      <Services></Services>
     </div>
   );
 };
