@@ -2,49 +2,49 @@
   {
     "title": "Cardiology",
     "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels.",
-    "img": "./image/1.jpg",
+    "img": "/image/1.jpg",
     "id": 1
   },
   {
     "title": "Dental",
     "description": "Dentistry, also known as dental medicine and oral medicine, is a branch of medicine that consists of the study, diagnosis",
-    "img": "./image/2.jpg",
+    "img": "/image/2.jpg",
     "id": 2
   },
   {
     "title": "Neurologist",
     "description": "A neurologist is a physician specializing in neurology and trained to investigate, or diagnose and treat neurological disorders.",
-    "img": "./image/3.jpg",
+    "img": "/image/3.jpg",
     "id": 3
   },
   {
     "title": "Pediatric",
     "description": "Pediatrics is the branch of medicine dealing with the health and medical care of infants, children, and adolescents ",
-    "img": "./image/4.jpg",
+    "img": "/image/4.jpg",
     "id": 4
   },
   {
     "title": "Pulmonary",
     "description": "Pulmonary hypertension is high blood pressure in the blood vessels that supply the lungs (pulmonary arteries).",
-    "img": "./image/5.jpg",
+    "img": "/image/5.jpg",
     "id": 5
   },
   {
     "title": "Traumatology",
     "description": "In medicine, traumatology is the study of wounds and injuries caused by accidents or violence to a person, and the surgical",
-    "img": "./image/6.jpg",
+    "img": "/image/6.jpg",
     "id": 6
   },
   {
     "title": "Urology",
     "description": "Urology is a part of health care that deals with diseases of the male and female urinary tract (kidneys, ureters, bladder).",
-    "img": "./image/7.png",
+    "img": "/image/7.png",
     "id": 7
   },
   {
     "title": "Xray",
     "description": "An X-ray, or, much less commonly, X-radiation, is a penetrating form of high-energy electromagnetic radiation.",
-    "img": "./image/8.jpg",
+    "img": "/image/8.jpg",
     "id": 8
   }
 ]

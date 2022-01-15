@@ -1,13 +1,8 @@
-import React, { useEffect, useState } from "react";
+import useService from "../hooks/useService";
 import Service from "../Service/Service";
 
 const Services = () => {
-  const [services, setServices] = useState([]);
-  useEffect(() => {
-    fetch("./services.json")
-      .then((res) => res.json())
-      .then((data) => setServices(data));
-  }, []);
+  const [services] = useService();
   return (
     <div>
       <div className="text-center mb-24 mt-10">

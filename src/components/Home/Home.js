@@ -1,5 +1,6 @@
 import React from "react";
 import "tw-elements";
+import Footer from "../Footer/Footer";
 import Services from "../Services/Services";
 import "./Home.css";
 import banner1 from "./image/banner-1.jpg";
@@ -15,15 +16,15 @@ const Home = () => {
       {/* Top Banner */}
       <div
         id="carouselExampleControls"
-        class="carousel slide relative"
+        className="carousel slide relative"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner relative w-full  overflow-hidden">
-          <div class="carousel-item active relative float-left w-full carousel-img">
-            <img src={banner1} class="block w-full " alt="" />
+        <div className="carousel-inner relative w-full  overflow-hidden">
+          <div className="carousel-item active relative float-left w-full carousel-img">
+            <img src={banner1} className="block w-full " alt="" />
           </div>
-          <div class="carousel-item relative float-left w-full carousel-img">
-            <img src={banner2} class="block w-full " alt="" />
+          <div className="carousel-item relative float-left w-full carousel-img">
+            <img src={banner2} className="block w-full " alt="" />
           </div>
         </div>
       </div>
@@ -131,6 +132,7 @@ const Home = () => {
       </div>
       {/* end of doctor section */}
       <Services></Services>
+      <Footer></Footer>
     </div>
   );
 };
