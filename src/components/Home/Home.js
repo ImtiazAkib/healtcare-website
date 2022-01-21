@@ -132,7 +132,6 @@ const Home = () => {
       </div>
       {/* end of doctor section */}
       <Services></Services>
-      <Footer></Footer>
     </div>
   );
 };

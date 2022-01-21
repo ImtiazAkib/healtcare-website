@@ -2,11 +2,12 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 const navigation = [
   { name: "Home", href: "/home", current: false },
   { name: "Services", href: "/services", current: false },
-  { name: "Gallery", href: "/gallery", current: false },
+  { name: "Events", href: "/events", current: false },
   { name: "Contact", href: "/contact-us", current: false },
 ];
 
@@ -15,6 +16,7 @@ function classNames(...classes) {
 }
 
 export default function Header() {
+  const { user, logOut } = useAuth();
   return (
     <Disclosure as="nav" className="bg-gray-800 sticky top-0 z-50">
       {({ open }) => (
@@ -54,17 +56,32 @@ export default function Header() {
                 </div>
               </div>
               <div>
-                <Link
-                  to="/login"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                >
-                  Login
-                </Link>
+                {user.email ? (
+                  <div className="flex">
+                    <p className="text-blue-600 mr-8 text-sm">
+                      Email:{user.email} <br />
+                      Name: {user.displayName}
+                    </p>
+                    <button
+                      onClick={logOut}
+                      className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                    >
+                      Logout
+                    </button>
+                  </div>
+                ) : (
+                  <Link
+                    to="/login"
+                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                  >
+                    LogIn
+                  </Link>
+                )}
               </div>
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="sm:hidden md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button
